@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            * {font-family: Helvetica, Verdana, Arial;}
+            img{width:220px; height:175px;}
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="jquery.replaceOnError.js"></script>
+        <script>
+            jQuery(document).ready(function () {
+                jQuery('.replace-it').replaceOnError({
+                    "placeholder": './Les_Horribles_Cernettes_in_1992.jpg'
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>jQuery.replaceOnError.Testing.</h1>
+        <h2>Without jQuery.replaceOnError:</h2>
+        <img src="notfound.jpg">
+        <h2>Using jQuery.replaceOnError:</h2>
+        <img class="replace-it" src="notfound.jpg">
+    
+    </body></html>
